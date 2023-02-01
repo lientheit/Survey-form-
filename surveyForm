@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+   <!-- container -->
+
+<div id = "container" class  = "box"> 
+    <h1 id ="title">Are you a dreamer?</h1>
+    <p id = "description">Thank you for taking the time to fill out this form.</p>
+  
+<!-- Form start -->
+  
+  <form id = "survey-form" class = "form">
+    <label for = "name" id="name-label">Enter your name:</label>
+    <input type = "text" id = "name" name = "name" placeholder ="Enter your full name" required><br><br>
+    <label for ="age" id ="number-label">Enter your age:</label>
+    <input type = "number" id = "number" name = "age" max="110" min="20" placeholder="Enter your A"><br><br>
+    <label for = "email" id="email-label">Enter your email:</label>
+    <input type = "email" id = "email" name = "email" placeholder="Enter your email" required></input>
+  
+<!-- dropdown -->
+
+  <label for ="dropdown" id="label-dropdown">How often do you dream?</label>
+  <select id ="dropdown" name="dream_frequency">
+    <option value="--PLease choose">--Please choose</option>
+    <option value="Every day">Every day</option>
+    <option value="Every other day">Every other day</option>
+    <option value="Once a week">Once a week</option>
+    
+<!-- Radio buttons --> 
+
+  </select>
+  <div id ="radio_buttons">
+    <input type ="radio" id ="yes" name ="answer" value = "Yes">
+    <label for ="Yes">Yes</label>
+    <input type = "radio" id = "no" name = "answer" value="No">
+    <label for = "no">No</label>
+  </div>
+  
+<!-- checkbox-->
+
+  <div id = "circles">
+    <p id = "box_description">What do you dream of most</p>
+    <input type = "checkbox" id = "Daily life" name = "Daily life" value = "Daily life">
+    <label for = "Daily life">Daily life</label>
+    <input type = "checkbox" id = "Love" name = "Love" value = "Love">
+    <label for = "Love">Love</label>
+    <input type = "checkbox" id = "Past" name = "Past" value = "The Past">
+    <label for = "Past">The Past</label>
+    <input type = "checkbox" id = "future" name = "future" value = "The Future">
+    <label for = "future">The future</label>
+    <input type = "checkbox" id = "Superpowers" name = "superpowers" value = "superpowers">
+    <label for = "superpowers">Superpowers</label>
+    <input type = "checkbox" id = "fear" name = "fear" value = "fear">
+    <label for = "fear">Your fears</label>
+  </div>
+  
+<!-- textarea -->
+
+  <div id = "share">
+    <p>Share your most recent dream or a recurring dream</p>
+    <textarea></textarea>
+  </div>
+  
+ <!-- submit -->
+ 
+  <button type "submit" id = "submit" value ="submit">submit</button>
+  </form>  
+   </div> 
+    <style>
+
+    </style>
+	<script src="index.js"></script>
+  </body>
+</html>
